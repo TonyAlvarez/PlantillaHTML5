@@ -1,7 +1,8 @@
-html, body {margin:0;padding:0;overflow-x:hidden;}
-
-body {
-    font:Arial, helvetica, sans-serif;
+html, body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
