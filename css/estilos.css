@@ -1,13 +1,19 @@
 html, body {margin:0;padding:0;overflow-x:hidden;}
 
+body {
+    font:Arial, helvetica, sans-serif;
+}
+
 
 /***************************************************************************************************************/
 /************************************************** HEADER *****************************************************/
 /***************************************************************************************************************/
 
-body {
-    font:Arial, helvetica, sans-serif;
-}
+header #menu {list-style:none;padding:0;width:70%;margin:0 auto;text-align:center;}
+header #menu li {display:inline;}
+header #menu li a {text-decoration:none;color:#000;padding:15px 30px;box-sizing: border-box;}
+header #menu li a:hover {background-color:#74C365}
+
 
 #main {
     min-height: 800px;
