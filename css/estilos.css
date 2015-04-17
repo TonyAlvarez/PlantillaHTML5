@@ -52,7 +52,7 @@ header #menu li a:hover {background-color:#74C365}
     order: 3;
 }
 
-header, footer {
+header {
     display: block;
     padding: 5px;
     background: #4C9141;
@@ -63,12 +63,14 @@ header, footer {
 /************************************************** FOOTER *****************************************************/
 /***************************************************************************************************************/
 
-.footer {
+footer {
+    display: block;
+    padding: 5px;
+    background: #4C9141;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    border-radius: 0 0 10px 10px;
-    color: #b4b4b4;
+    color: #000000;
 }
 
 
