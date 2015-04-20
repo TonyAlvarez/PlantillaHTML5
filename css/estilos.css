@@ -12,7 +12,7 @@ html, body {
 
 header #menu {list-style:none;padding:0;width:70%;margin:0 auto;text-align:center;}
 header #menu li {display:inline;}
-header #menu li a {text-decoration:none;color:#000;padding:15px 30px;box-sizing: border-box;}
+header #menu li a {text-decoration:none;color:#000;padding:20px 20px;box-sizing: border-box;display:inline-block;}
 header #menu li a:hover {background-color:#74C365}
 
 
@@ -55,7 +55,7 @@ header #menu li a:hover {background-color:#74C365}
 
 header {
     display: block;
-    padding: 5px;
+    padding: 0;
     background: #4C9141;
 }
 
