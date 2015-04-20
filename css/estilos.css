@@ -17,40 +17,15 @@ header #menu li a:hover {background-color:#74C365}
 
 
 #main {
+    max-width: 1024px;
     min-height: 800px;
-    margin: 0px;
+    margin: 30px auto 0 auto;
     padding: 0px;
-    display: -webkit-flex;
-    display:         flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
 }
 
-#main > article {
+.container {
     padding: 5px;
     background: #dddd88;
-    -webkit-flex: 3 1 60%;
-    flex: 3 1 60%;
-    -webkit-order: 2;
-    order: 2;
-}
-
-#main > nav {
-    padding: 5px;
-    background: #ccccff;
-    -webkit-flex: 1 6 20%;
-    flex: 1 6 20%;
-    -webkit-order: 1;
-    order: 1;
-}
-
-#main > aside {
-    padding: 5px;
-    background: #ccccff;
-    -webkit-flex: 1 6 20%;
-    flex: 1 6 20%;
-    -webkit-order: 3;
-    order: 3;
 }
 
 header {
@@ -82,19 +57,15 @@ footer {
 /***************************************************************************************************************/
 @media all and (max-width: 640px) {
 
-    #main, #page {
-        -webkit-flex-flow: column;
-        flex-flow: column;
+    header #menu li {
+        display: block;
     }
 
-    #main > article, #main > nav, #main > aside {
-        /* Return them to document order */
-        -webkit-order: 0;
-        order: 0;
+    header #menu li a, header #menu {
+        width: 100%;
     }
 
-    #main > nav, #main > aside, header, footer {
-        min-height: 50px;
-        max-height: 50px;
+    footer {
+        font-size: 13px;
     }
 }
