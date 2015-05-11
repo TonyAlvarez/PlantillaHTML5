@@ -11,12 +11,42 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
+    <script>
+        var contador = false;
+
+        function menu_desplegable(){
+            if (contador){
+                cerrar();
+            }else{
+                abrir();
+            }
+        }
+
+        function abrir(){
+            document.getElementById('menu').style.display="block";
+            contador = true;
+        }
+
+        function cerrar(){
+            document.getElementById('menu').style.display="none";
+            contador = false;
+        }
+    </script>
 </head>
 <body>
     <header>
-
-        <span class="menu-button"></span>
-
+        <div class="nav-logo">
+            <div class="logo">
+                <img src="img/logo.svg">
+            </div>
+            <div class="social">
+                <img src="img/social-facebook.png">
+                <img src="img/social-twitter.png">
+                <img src="img/social-plus.png">
+            </div>
+        </div>
+        <div class="separar"></div>
+        <span class="menu-button" onclick="menu_desplegable()"></span>
         <ul id="menu">
             <li><a class="selected" href="#">Home</a></li>
             <li><a href="#">Proyectos</a></li>

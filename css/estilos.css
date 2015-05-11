@@ -18,11 +18,18 @@ header {
     background: #4C9141;
 }
 
+.nav-logo {max-width: 1024px;padding:15px 0;margin: 0 auto;position:relative;}
+.logo {width:60%;display: inline;}
+.logo > img {height:100px;}
+.social {display:inline;right:15px;position:absolute;bottom:15px;}
+.social > img {width:50px;}
+
+.separar {border-top: 4px solid #1e4d2b;}
+
 header #menu {
     max-width: 1024px;
     list-style:none;
     padding:0;
-    width:100%;
     margin:0 auto;
     text-align:center;
     font-size: 0;
@@ -37,7 +44,8 @@ header #menu li {
 
 header #menu li a {
     text-decoration:none;
-    color:#000;
+    color: #1d3a1d;
+    font-weight:bold;
     padding: 20px;
     box-sizing: border-box;
     display:inline-block;
@@ -59,11 +67,6 @@ header #menu li a:hover, .selected {
     background: url("../img/menu_icon.svg");
     background-size: contain;
 }
-
-.menu-button:hover {
-
-}
-
 
 /***************************************************************************************************************/
 /************************************************** MAIN *****************************************************/
@@ -105,6 +108,9 @@ footer {
 /***************************************************************************************************************/
 @media all and (max-width: 640px) {
 
+    #menu {display:none;}
+    .logo {display:block;}
+    .social {display:none !important;}
 
     header #menu li {
         display: block;
